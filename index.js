@@ -5,7 +5,7 @@ WRITTEN BY Desmond Axel
 /*
 Environment setup
 Set environment variables as described below:
-  URL_SERVER - base url for fiveM server e.g. http://139.99.114.144:31222
+  URL_SERVER - base url for fiveM server e.g. http://178.128.218.126:31222
   LOG_LEVEL - Int of enum 0-4 specifying level of logs to display with 4 as no logs
   BOT_TOKEN - JANGAN LUPA MASUKKIN
   CHANNEL_ID - JANGAN LUPA MASUKKIN
