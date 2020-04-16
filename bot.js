@@ -82,7 +82,7 @@ exports.start = function(SETUP) {
 
   const URL_PLAYERS = new URL('/players.json',SETUP.URL_SERVER).toString();
   const URL_INFO = new URL('/info.json',SETUP.URL_SERVER).toString();
-  const MAX_PLAYERS = 32;
+  const MAX_PLAYERS = 64;
   const TICK_MAX = 1 << 9; // max bits for TICK_N
   const FETCH_TIMEOUT = 900;
   const FETCH_OPS = {
@@ -168,9 +168,9 @@ exports.start = function(SETUP) {
   };
 
   const UpdateEmbed = function() {
-    let dot = TICK_N % 2 === 0 ? '#W.I' : 'Roleplay';
+    let dot = TICK_N % 2 === 0 ? 'Roofstad' : 'Roleplay';
     let embed = new Discord.RichEmbed()
-    .setAuthor("Wonderful Indonesia", "https://i.ibb.co/bgPcQ9W/wonderful-indonesia-item-5baa046f73ea9-1.png")
+    .setAuthor("Loyalty Roleplay Indonesia", "https://cdn.discordapp.com/attachments/672358129576443904/684966262865920003/LRI2.png")
     .setColor(0x2894C2)
     .setFooter(TICK_N % 2 === 0 ? '⚪ LRI' : '⚫ LRI')
     .setTimestamp(new Date())
@@ -263,8 +263,8 @@ exports.start = function(SETUP) {
   // When bot ready
   bot.on('ready', async () => {
     log(LOG_LEVELS.INFO,'Started...');
-    // bot.user.setGame('#W.I', 'https://www.twitch.tv');
-    bot.user.setActivity('[W.I]',{'url':'https://www.twitch.tv','type':'WATCHING'});
+    // bot.user.setGame('Roofstad', 'https://www.twitch.tv');
+    bot.user.setActivity('[LRI]',{'url':'https://www.twitch.tv','type':'WATCHING'});
     bot.generateInvite(['ADMINISTRATOR']).then((link) => {
       log(LOG_LEVELS.INFO,`Invite URL - ${link}`);
     }).catch(null);
@@ -335,7 +335,7 @@ exports.start = function(SETUP) {
   })
   
   bot.on('message', async function (msg) {
-    if (msg.channel.id === '699976692378370130') {
+    if (msg.channel.id === '678155863197745199') {
         await msg.react(bot.emojis.get('587057796936368128'));
         await msg.react(bot.emojis.get('595353996626231326'));
     }
