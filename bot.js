@@ -172,9 +172,9 @@ exports.start = function(SETUP) {
     let embed = new Discord.RichEmbed()
     .setAuthor("Wonderful Indonesia", "https://i.ibb.co/bgPcQ9W/wonderful-indonesia-item-5baa046f73ea9-1.png")
     .setColor(0x2894C2)
-    .setFooter(TICK_N % 2 === 0 ? '⚪ LRI' : '⚫ LRI')
+    .setFooter(TICK_N % 2 === 0 ? '⚪ WI' : '⚫ WI')
     .setTimestamp(new Date())
-    .addField('Selamat datang di Loyalty Roleplay Indonesia. DISINI DI WAJIBKAN MEMBACA PERATURAN" YANG SUDAH ADA.',false) 
+    .addField('Selamat datang di Wonderful Indonesia. DISINI DI WAJIBKAN MEMBACA PERATURAN" YANG SUDAH ADA.',false) 
     if (STATUS !== undefined)
     {
       embed.addField(':warning: Actuele server status:',`${STATUS}\n\u200b\n`);
